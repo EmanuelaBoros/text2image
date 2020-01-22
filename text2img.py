@@ -44,8 +44,8 @@ def txt_to_img(input_file, output_file):
     command.append('caption:"' + text + '"')
     command.append(output_file)
 
-    stream = os.popen(' '.join(command))
-    _ = stream.read()
+    os.popen(' '.join(command))
+#    stream.read()
 
 #TODO: subprocess too slow
 #    p = subprocess.Popen(command, stdout=subprocess.PIPE)
